@@ -17,10 +17,10 @@ public class Main {
         //Книга №2
         Book dejavu = new Book("Дежавю", kizaru, 2022);
         System.out.println("Название = " + dejavu.getName());
-        System.out.println("Автор = " + kizaru.getFirstName() + kizaru.lastName);
+        System.out.println("Автор = " + kizaru.getFirstName() + kizaru.getLastName());
         System.out.println("Релиз = " + dejavu.getYearOfPublication());
-      //  dejavu.setYearOfPublication(2023);
-        //Не работает SET :(((
+        dejavu.setYearOfPublication(2023);
+        System.out.println("Проверка " + dejavu.getYearOfPublication());
 
     }
 }
